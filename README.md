@@ -8,3 +8,16 @@ My own is to using a binary from carla source because it has latest carla distri
 But, I want the latest version, that is 15, but you can still fine with version 13 as well
 
 When you read it, you will be going to this repo, choose your version and download it, the most important file is the first one : https://github.com/carla-simulator/carla/blob/master/Docs/download.md
+
+Oncce download completed, extract it with TAR (Dont extract it with GUI), open terminal type :
+
+
+
+Get your cup of coffe while waiting the extrack process :)
+
+
+
+Ok, now make a test 
+this is my command to run a carla : 
+
+
