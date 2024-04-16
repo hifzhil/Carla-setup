@@ -33,3 +33,19 @@ Additionally, you can add this args also :
 - benchmak (set carla to benchmark mode, so it will measure and reporting performance metrics)
 - fps = X (we can control the FPS, replace X for the FPS you need)
 
+
+Let make some fun, run sme of the example. Let me explain :
+- Carla Simulator writing in python3.7
+- This simulator run by the binary file, you can communicate with its API, which is python3.7.
+- In your Carla directory, there is a folder named PythonAPI. (in my case in ~/Carla/PythonAPI), in this folder located all stuff you need to communicate with simulator
+  - utils : thereis important file named config.py, you can change a Town by running this code
+  - carla : at this folder, there is a dist folder, if you have problem wuth importing carla module, check this dir
+  - example : at this folder you can using them directly (but sometimes thereis an issue)
+ 
+~~~
+cd ~/Carla/PythonAPU/examples
+ls
+~~~
+
+Run one of them. I will run manual_control.py
+
