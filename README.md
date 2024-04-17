@@ -1,49 +1,60 @@
 # Carla-setup
 
-This is my custom setup on carla simulator 
+Welcome to my custom setup for the Carla simulator!
 
-Please read a carla simulator page on this https://carla.readthedocs.io/en/latest/start_quickstart/
+Before diving in, if you're new to Carla, make sure to visit the Carla Simulator Quick Start Guide for an overview.
 
-My own is to using a binary from carla source because it has latest carla distriutins, as we know, to work with carla_ros_bridge on Ros 1 you need a Ubuntu 20, and a carla version that available on Ubuntu 20 repo's iis version 13
-But, I want the latest version, that is 15, but you can still fine with version 13 as well
+## Overview
+
+My setup revolves around using the latest Carla distributions directly from the source. While the version available in Ubuntu 20 repositories is typically 13, I prefer version 15 for its updated features. However, version 13 works just fine for most cases.
 ![Screenshot_20240411_161423](https://github.com/hifzhil/Carla-setup/assets/73360005/4b8c4dfd-c992-4ddf-b168-791530e0a835)
 
-When you read it, you will be going to this repo, choose your version and download it, the most important file is the first one : https://github.com/carla-simulator/carla/blob/master/Docs/download.md
+## Installation
+To get started, head over to the [Carla Releases Page](https://github.com/carla-simulator/carla/blob/master/Docs/download.md) and download the appropriate version for your needs. The crucial file is the binary distribution.
 
-Oncce download completed, extract it with TAR (Dont extract it with GUI), open terminal type :
+Once downloaded, extract the files using the TAR command in your terminal:
+```
+tar -xzvf <carla_file.tar.gz>
+```
+
 ![Screenshot_20240417_034639](https://github.com/hifzhil/Carla-setup/assets/73360005/0e87e568-4b04-452a-a357-ff3e1dffef7e)
 
 
-Get your cup of coffe while waiting the extrack process :)
+Grab a cup of coffee while you wait for the extraction process to complete!
 
-
-
-Ok, now make a test 
-this is my command to run a carla : 
+## Usage
+After extraction, it's time to test your Carla setup. Use the following command to run Carla:
 
 ```
 ./CarlaUE4.sh -quality-level=Low -ResX=360 -ResY=240
 ```
 
-- quality-level: set the CARLA's graphic quality
-- ResX: CARLA's window resolution (x-axis)
-- ResY: CARLA's window resolution (y-axis)
+- 'quality-level': Adjusts the graphic quality.
+- 'ResX': Sets the window resolution along the x-axis.
+- 'ResY': Sets the window resolution along the y-axis.
 
-Additionally, you can add this args also :
-- benchmak (set carla to benchmark mode, so it will measure and reporting performance metrics)
-- fps = X (we can control the FPS, replace X for the FPS you need)
-  
-Let make some fun, run sme of the example. Let me explain :
-- Carla Simulator writing in python3.7
-- This simulator run by the binary file, you can communicate with its API, which is python3.7.
-- In your Carla directory, there is a folder named PythonAPI. (in my case in ~/Carla/PythonAPI), in this folder located all stuff you need to communicate with simulator
-  - utils : thereis important file named config.py, you can change a Town by running this code
-  - carla : at this folder, there is a dist folder, if you have problem wuth importing carla module, check this dir
-  - example : at this folder you can using them directly (but sometimes thereis an issue)
+Additional arguments you can use:
+- 'benchmak': Sets Carla to benchmark mode for performance metrics.
+- 'fps=X ':Adjusts the frames per second (replace X with your desired FPS).
+
+## Getting Started with Examples
+
+Carla Simulator is written in Python 3.7 and can be interacted with using its Python API.
+
+Navigate to the PythonAPI folder within your Carla directory (typically ~/Carla/PythonAPI). Here, you'll find essential files for communication:
+
+- utils: Contains important files like config.py to change the town settings.
+- carla: Check the dist folder here if you encounter import issues with the Carla module.
+- examples: Explore this folder for ready-to-use examples (although sometimes they may have issues).
  
 ~~~
 cd ~/Carla/PythonAPU/examples
 ls
 ~~~
 
-Run one of them. I will run manual_control.py
+Run any of the examples. For instance, to run manual_control.py, execute:
+```
+python manual_control.py
+```
+## Demos
+For a demonstration of Carla in action, check out my demo [here](https://www.youtube.com/watch?v=36-x1GWF4Iw&t=6s).
