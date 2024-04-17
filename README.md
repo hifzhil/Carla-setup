@@ -57,4 +57,6 @@ Run any of the examples. For instance, to run manual_control.py, execute:
 python manual_control.py
 ```
 ## Demos
-For a demonstration of Carla in action, check out my demo [here](https://www.youtube.com/watch?v=36-x1GWF4Iw&t=6s).
+For a demonstration of Carla in action, check out my demo!
+
+[![here](https://github.com/hifzhil/Carla-setup/assets/73360005/410a65ed-f34e-46de-b4b4-8a33969dff71)](https://www.youtube.com/watch?v=36-x1GWF4Iw&t=6s)
