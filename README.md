@@ -32,8 +32,7 @@ this is my command to run a carla :
 Additionally, you can add this args also :
 - benchmak (set carla to benchmark mode, so it will measure and reporting performance metrics)
 - fps = X (we can control the FPS, replace X for the FPS you need)
-
-
+  
 Let make some fun, run sme of the example. Let me explain :
 - Carla Simulator writing in python3.7
 - This simulator run by the binary file, you can communicate with its API, which is python3.7.
@@ -48,4 +47,3 @@ ls
 ~~~
 
 Run one of them. I will run manual_control.py
-
